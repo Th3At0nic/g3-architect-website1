@@ -18,7 +18,7 @@
     font-weight: 600;
 }
 
-/* nav styles */
+/* header styels */
 header {
   background: rgba(255, 144, 14, 0.1);
   padding: 50px 240px;
@@ -46,8 +46,6 @@ nav li {
   font-weight: 500;
 }
 
-/* banner styles */
-
 .banner-content {
   max-width: 862px;
   margin: 0 auto;
@@ -63,4 +61,34 @@ nav li {
     color:#727272;
     font-size: 1rem;
     font-weight: 400;
+    margin: 20px;
+}
+.banner img{
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* mobile device responsive */
+@media screen and (max-width: 576px) {
+  header{
+    padding: 20px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+}
+
+/* medium device responsive */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+      padding: 20px;
+    }
+    nav{
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
 }
