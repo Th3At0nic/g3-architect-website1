@@ -101,10 +101,14 @@ nav li {
   padding: 10px 301px;
 }
 .team-img-container {
-  max-width: 60%;
+  /* max-width: 60%; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
 }
 .team-description-container {
   max-width: 40%;
+  padding-left: 70px;
 }
 .team-description-title {
   font-size: 2.8rem;
